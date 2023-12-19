@@ -3,7 +3,7 @@ import CardItem from './CardItem'
 
 const Cards = () => {
 	return (
-		<main className='grid items-center justify-center gap-16 p-4 md:p-8'>
+		<main className='grid items-center justify-center grid-cols-1 gap-16 p-4 md:grid-cols-2 lg:grid-cols-none md:p-8'>
 			{movieList.map((item) => (
 				<CardItem
 					name={item.name}
