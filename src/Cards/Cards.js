@@ -3,10 +3,9 @@ import CardItem from './CardItem'
 
 const Cards = () => {
 	return (
-		<main className='grid items-center justify-center gap-4 p-4 md:p-8'>
+		<main className='grid items-center justify-center gap-8 p-4 md:p-8'>
 			{movieList.map((item) => (
 				<CardItem
-					className='overflow-hidden rounded-md'
 					name={item.name}
 					image={item.image}
 					thumbnail={
@@ -19,7 +18,7 @@ const Cards = () => {
 					genre={item.genre}
 					rating={item.aggregateRating.ratingValue}
 					desc={item.desc}
-					directors={item.director[0].name}
+					director={item.director[0].name}
 				/>
 			))}
 		</main>
