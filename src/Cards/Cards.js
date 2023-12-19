@@ -3,7 +3,7 @@ import CardItem from './CardItem'
 
 const Cards = () => {
 	return (
-		<main className='grid items-center justify-center gap-8 p-4 md:p-8'>
+		<main className='grid items-center justify-center gap-16 p-4 md:p-8'>
 			{movieList.map((item) => (
 				<CardItem
 					name={item.name}
@@ -17,7 +17,7 @@ const Cards = () => {
 					year={item.datePublished.split('-')[0]}
 					genre={item.genre}
 					rating={item.aggregateRating.ratingValue}
-					desc={item.desc}
+					desc={item.description}
 					director={item.director[0].name}
 				/>
 			))}
